@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elija Asola's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #b4beb5;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d4ff;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(64, 100, 141, 0.5), rgba(132, 71, 118, 0.8)), url('https://via.placeholder.com/1920x1080') center/cover;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeIn 2s;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            animation: fadeIn 3s;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #333;
+            background-color: #00d4ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: fadeIn 4s;
+        }
+
+        .hero button:hover {
+            background-color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+        }
+
+        .project-card .content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elija Asola's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my work and passion for coding</p>
+            <button onclick="scrollToSection('projects')">View Projects</button>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="about me.jpg" alt="Profile Picture">
+        <p>Hello! I am Elija Asola, a web developer with a passion for creating interactive and user-friendly websites. Welcome to my portfolio!</p>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <img src="about me 2" alt="Profile Picture">
+            <p>Hello! My name is Elija Asola, and I am a multifaceted technology enthusiast and creative professional. Since 2022, I have been sharpening my expertise across various domains, including graphic design, full-stack web development, and ethical hacking. My journey is defined by a commitment to innovation, attention to detail, and an unyielding passion for creating solutions that not only meet but exceed expectations.</p>
+            <p>As a graphic designer, I blend artistry with strategy to craft compelling visuals that communicate ideas effectively. From brand logos to user interface designs, my creations stand out for their aesthetic appeal and functionality.</p>
+            <p>In the realm of full-stack development, I specialize in building responsive, interactive websites and robust applications. Proficient in front-end technologies like HTML, CSS, and JavaScript, and back-end frameworks, I deliver seamless user experiences backed by powerful server-side logic.</p>
+            <p>Furthermore, as an ethical hacker, I possess a profound understanding of cybersecurity principles and practices. I am dedicated to identifying vulnerabilities and implementing measures to protect systems and data, ensuring secure digital environments for individuals and organizations.</p>
+        </section>
+        
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <section id="projects">
+            <h2>My Projects</h2>
+        
+            <!-- Full-Stack Development Projects -->
+            <h3>Full-Stack Development</h3>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="fullstack.jpg" alt="Full-Stack Project 1">
+                    <div class="content">
+                        <h3>Project 1 - Full-Stack Web Application</h3>
+                        <p>A comprehensive web application built with HTML, CSS, JavaScript, and back-end technologies such as Node.js and Express. This project demonstrates my skills in creating dynamic, interactive, and scalable web applications. It includes user authentication, database integration, and responsive design.</p>
+                        <p><strong>Worked at:</strong> NESCO PLC, FDI</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="fullstack 2.jpg" alt="Full-Stack Project 2">
+                    <div class="content">
+                        <h3>Project 2 - E-Commerce Platform</h3>
+                        <p>This project showcases an e-commerce platform that leverages React for the front end and a Node.js backend. I integrated features such as product listing, shopping cart, payment gateway, and order management.</p>
+                        <p><strong>Worked at:</strong> SAF PLC</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Graphic Design Projects -->
+            <h3>Graphic Design</h3>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="graphic 1.jpeg" alt="Graphic Design Project 1">
+                    <div class="content">
+                        <h3>Project 1 - Brand Logo Design</h3>
+                        <p>A logo I designed for a local startup, combining simplicity and modernity. It features clean lines and vibrant colors that represent the brand's dynamic and youthful identity.</p>
+                        <p><strong>Worked at:</strong> NESCO PLC</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="graphic2.jpeg" alt="Graphic Design Project 2">
+                    <div class="content">
+                        <h3>Project 2 - User Interface Design</h3>
+                        <p>This project demonstrates my UI/UX design skills. I created wireframes, prototypes, and high-fidelity designs for a mobile app aimed at improving user engagement and providing an intuitive experience.</p>
+                        <p><strong>Worked at:</strong> FDI</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Ethical Hacking Projects -->
+            <h3>Ethical Hacking</h3>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="penetration1.jpeg" alt="Ethical Hacking Project 1">
+                    <div class="content">
+                        <h3>Project 1 - Penetration Testing</h3>
+                        <p>In this project, I conducted penetration testing on a client’s network to identify vulnerabilities, assess security risks, and recommend remediation strategies. The project focused on network security and web application testing.</p>
+                        <p><strong>Worked at:</strong> SAF PLC</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="pen2.jpeg" alt="Ethical Hacking Project 2">
+                    <div class="content">
+                        <h3>Project 2 - Security Audit</h3>
+                        <p>This project involved performing a comprehensive security audit on internal systems and applications at NESCO PLC. I focused on identifying flaws and ensuring compliance with industry security standards.</p>
+                        <p><strong>Worked at:</strong> NESCO PLC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: <a href="mailto:jumaelija@yahoo.com">jumaelija@yahoo.com</a> | <a href="mailto:jumaelija@outlook.com">jumaelija@outlook.com</a></p>
+        <p>Phone: 0707907000</p>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@asola.junior" target="_blank">TikTok</a>
+            <a href="https://www.facebook.com/steve.asola.juma" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/its.asola" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Elija Asola's Portfolio</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
